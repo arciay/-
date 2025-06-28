@@ -1,19 +1,4 @@
 ﻿local _,ns = ...
-ns.ADDUIEVENT("PLAYER_ENTERING_WORLD", function()
-
-
-
-end)
-
---[[掏出武器
-  if event == "PLAYER_MOUNT_DISPLAY_CHANGED"   then
-        ToggleSheath()
-    elseif event == "PLAYER_STARTED_MOVING" then
-        if GetSheathState() == 1 then
-            ToggleSheath()
-        end
-    end
-]]
 
 local SpellTable = {
 	[446534] = true,--测试
