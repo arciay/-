@@ -1,5 +1,3 @@
-﻿local _,ns = ...
-
 local SpellTable = {
 	[446534] = true,--测试
 
@@ -107,6 +105,8 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("UNIT_SPELLCAST_START")
 f:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED")
+f:RegisterEvent("UNIT_SPELLCAST_FAILED")
+f:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
 f:RegisterEvent("UNIT_SPELLCAST_STOP")
 f:SetScript("OnEvent", function(self, event, unit)
     if event == "UNIT_SPELLCAST_START" then
